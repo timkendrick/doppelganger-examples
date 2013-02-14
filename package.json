@@ -1,0 +1,29 @@
+{
+	"name": "doppelganger-example",
+	"version": "0.1.0",
+	"author": {
+		"name": "Tim Kendrick",
+		"email": "timkendrick@gmail.com>",
+		"url": "https://github.com/timkendrick"
+	},
+	"description": "Doppelganger server example",
+	"scripts": {
+		"start": "node ./server"
+	},
+	"main": "./doppelganger-server",
+	"config": {
+		"port": "8000",
+		"debug": "false"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/timkendrick/doppelganger-example.git"
+	},
+	"dependencies": {
+		"doppelganger": "0.1.x",
+		"node-static": "0.6.x"
+	},
+	"engines": {
+		"node": ">=0.8"
+	}
+}
