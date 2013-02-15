@@ -37,7 +37,7 @@ npm config set doppelganger-examples:port 1337
 npm start
 ```
 
-## Run in debug mode (throw all errors)
+## Run in debug mode (halt on all errors)
 
 ```bash
 # Update the server configuration
