@@ -20,7 +20,7 @@ npm install
 npm start
 ```
 
-Once the server is up and running, you can access the examples at http://localhost:8000/
+Once the server is up and running, you can access the examples at [http://localhost:8000/](http://localhost:8000/)
 
 View source to see the content that is being inserted by the server-side app instance. 
 
