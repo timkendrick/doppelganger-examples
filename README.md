@@ -18,10 +18,12 @@ npm install
 
 # Start the server
 npm start
-
-# View the site in your web browser
-open http://localhost:8000/
 ```
+
+Once the server is up and running, you can access the examples at http://localhost:8000/
+
+View source to see the content that is being inserted by the server-side app instance. 
+
 
 # Configuration options
 
@@ -33,9 +35,6 @@ npm config set doppelganger-examples:port 1337
 
 # Start the server
 npm start
-
-# View the site in your web browser
-open http://localhost:1337/
 ```
 
 ## Run in debug mode (throw all errors)
@@ -46,7 +45,4 @@ npm config set doppelganger-examples:debug true
 
 # Start the server
 npm start
-
-# View the site in your web browser
-open http://localhost:1337/
 ```
