@@ -24,8 +24,8 @@ define(
 		var sidebarView = _createSidebarView(data.questions, urls);
 		var contentView = _createContentView(data.index.title, data.index.content);
 		
-		$('[data-id=sidebar]').append(sidebarView.$el);
-		$('[data-id=content]').append(contentView.$el);
+		$('[data-id=sidebar]').empty().append(sidebarView.$el);
+		$('[data-id=content]').empty().append(contentView.$el);
 		
 		_createAppRouter(sidebarView, contentView, urls);
 		
