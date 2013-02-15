@@ -1,9 +1,0 @@
-.page-header { height: 40px; color: black; }
-.sidebar-view .icon-chevron-right {
-	margin-top: 2px;
-	margin-right: -6px;
-	opacity: .25;
-}
-.sidebar-view .active .icon-chevron-right {
-	opacity: 1;
-}

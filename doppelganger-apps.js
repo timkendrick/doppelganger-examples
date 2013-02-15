@@ -20,5 +20,5 @@
  *  ```
  */
 module.exports = {
-	"/": { "index": "apps/faq/index.html", "config": "apps/faq/js/src/config.js", "assets": "apps/faq/static" }
+	"/": { "index": "apps/faq/index.html", "config": "apps/faq/js/src/config.js", "assets": "apps/faq" }
 };
