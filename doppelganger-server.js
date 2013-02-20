@@ -26,17 +26,16 @@ exports.init = function(appConfig, port, debug, callback) {
 		apps.push({ app: app, appRoot: appRoot, staticRoot: appData.assets });
 	}
 	
-	// Initialise the apps one-at-a-time to prevent global variable collisions
-	_loadApp(0);
-	
-	
-	function _loadApp(index) {
-		var appData = apps[index];
+	// Initialise the Doppelganger app instances
+	var numLoaded = 0;
+	apps.forEach(function(appData) {
 		if (debug) { console.log('Loading Doppelganger app... "' + appData.appRoot + '"'); }
-		appData.app.init(function(app) {
-			if (index === apps.length - 1) { _startServer(apps, port, debug, callback) } else { _loadApp(index + 1); }
+		appData.app.init(function() {
+			if (debug) { console.log('Initialised Doppelganger app... "' + appData.appRoot + '"'); }
+			if (++numLoaded === apps.length) { _startServer(apps, port, debug, callback) }
 		});
-	}
+	});
+	
 	
 	/**
 	 * Start the server with the specified Doppelganger apps
